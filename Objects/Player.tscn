@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b8oo4ep0nc6ss"]
+
+[ext_resource type="Script" uid="uid://bl6cyrgjtsoev" path="res://Objects/player.gd" id="1_8r7yd"]
+[ext_resource type="PackedScene" uid="uid://qgfrsmwaebxu" path="res://UI/player_ui.tscn" id="2_n6db0"]
+
+[sub_resource type="Gradient" id="Gradient_8r7yd"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g7b7a"]
+gradient = SubResource("Gradient_8r7yd")
+width = 16
+height = 16
+
+[node name="Player" type="Node2D" unique_id=554025279]
+script = ExtResource("1_8r7yd")
+metadata/_custom_type_script = "uid://dhwivq1kr85ht"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=73048115]
+texture = SubResource("GradientTexture2D_g7b7a")
+
+[node name="CanvasUI" type="CanvasLayer" parent="." unique_id=1247327358]
+
+[node name="Player UI" parent="CanvasUI" unique_id=130720280 instance=ExtResource("2_n6db0")]

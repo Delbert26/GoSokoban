@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://qgfrsmwaebxu"]
+
+[sub_resource type="Gradient" id="Gradient_2q4oh"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g7b7a"]
+gradient = SubResource("Gradient_2q4oh")
+width = 24
+height = 24
+
+[node name="Player UI" type="Control" unique_id=130720280]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Up Button" type="TouchScreenButton" parent="." unique_id=251708756]
+position = Vector2(40, 104)
+texture_normal = SubResource("GradientTexture2D_g7b7a")
+passby_press = true
+action = "up"
+
+[node name="Left Button" type="TouchScreenButton" parent="." unique_id=872461816]
+position = Vector2(16, 128)
+texture_normal = SubResource("GradientTexture2D_g7b7a")
+passby_press = true
+action = "left"
+
+[node name="Down Button" type="TouchScreenButton" parent="." unique_id=2140392575]
+position = Vector2(40, 152)
+texture_normal = SubResource("GradientTexture2D_g7b7a")
+passby_press = true
+action = "down"
+
+[node name="Right Button" type="TouchScreenButton" parent="." unique_id=1395734253]
+position = Vector2(64, 128)
+texture_normal = SubResource("GradientTexture2D_g7b7a")
+passby_press = true
+action = "right"
